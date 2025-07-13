@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Info</title>
+  <body onload="showInfo()">
+  <script>
+    // Variable declarations
+    let name = "John Doe";
+    let age = 25;
+    let city = "New York";
+    let email = "john.doe@example.com";
+
+    // Logging to console
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("City:", city);
+    console.log("Email:", email);
+
+    // Function to display on the page
+    function showInfo() {
+      document.getElementById("info").innerHTML =
+        `<p>Name: ${name}</p>
+         <p>Age: ${age}</p>
+         <p>City: ${city}</p>
+         <p>Email: ${email}</p>`;
+    }
+  </script>
+
+<h1>What is a Variable?</h1>
+  <h2>Personal Information</h2>
+  <div id="info"></div>
+   <h3>Understanding Variables in JavaScript</h3>
+  <p>
+    A <strong>variable</strong> is a container for storing data values. In JavaScript,
+    variables can hold numbers, text (strings), objects, arrays, and more.
+  </p>
+  <p>
+    You can create variables using <code>let</code>, <code>const</code>, or <code>var</code>.
+    Example:
+  </p>
+  <pre><code>let name = "Alice";</code></pre>
+  <p>Variables help you reuse and manage data easily throughout your code.</p>
+
+  <script>
+    console.log("A variable stores a value that you can use later in your script.");
+  </script>
+  <script src="consolemethods.js"></script>
+</body>
+</html>
